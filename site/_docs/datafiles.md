@@ -21,14 +21,13 @@ Plugins/themes can also leverage Data Files to set configuration variables.
 
 As explained on the [directory structure](../structure/) page, the `_data`
 folder is where you can store additional data for Jekyll to use when generating
-your site. These files must be YAML files
-(using either the `.yml`, `.yaml`, `.json` or `csv` extension) and they will be
-accessible via `site.data`.
+your site. These files must be YAML files (using either the `.yml`, `.yaml`, `.json`
+or `csv` extension) and they will be accessible via `site.data`.
 
 ## Example: List of members
 
-Here is a basic example of using Data Files to avoid copy-pasting large chunks
-of code in your Jekyll templates:
+Here is a basic example of using Data Files to avoid copy-pasting large chunks of
+code in your Jekyll templates:
 
 In `_data/members.yml`:
 
@@ -73,10 +72,7 @@ You can now render the list of members in a template:
 
 ## Example: Organizations
 
-Data files can also be placed in sub-folders of the `_data` folder. Each folder
-level will be added to a variable's namespace. The example below shows how
-GitHub organizations could be defined separately in a file under the `orgs`
-folder:
+Data files can also be placed in sub-folders of the `_data` folder. Each folder level will be added to a variable's namespace. The example below shows how GitHub organizations could be defined separately in a file under the `orgs` folder:
 
 In `_data/orgs/jekyll.yml`:
 
@@ -101,8 +97,7 @@ members:
     github: jdoe
 {% endhighlight %}
 
-The organizations can then be accessed via `site.data.orgs`, followed by the
-file name:
+The organizations can then be accessed via `site.data.orgs`, followed by the file name:
 
 {% highlight html %}
 {% raw %}
@@ -117,35 +112,5 @@ file name:
   </li>
 {% endfor %}
 </ul>
-{% endraw %}
-{% endhighlight %}
-
-## Example: Accessing a specific author
-
-Pages and posts can also access a specific data item. The example below shows how to access a specific item:
-
-`_data/people.yml`:
-{% highlight yaml %}
-dave:
-    name: David Smith
-    twitter: DavidSilvaSmith
-{% endhighlight %}
-
-The author can then be specified as a page variable in a post's frontmatter:
-
-{% highlight html %}
-{% raw %}
----
-title: sample post
-author: dave
----
-
-{% assign author = site.data.people[page.author] %}
-<a rel="author"
-  href="{{ author.twitter }}"
-  title="{{ author.name }}">
-    {{ author.name }}
-</a>
-
 {% endraw %}
 {% endhighlight %}

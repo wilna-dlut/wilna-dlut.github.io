@@ -286,10 +286,10 @@ root of your source directory. This will embed the contents of
   </p>
 </div>
 
-You can also pass parameters to an include. Omit the quotation marks to send a variable's value. Liquid curly brackets should not be used here:
+You can also pass parameters to an include:
 
 {% highlight ruby %}
-{% raw %}{% include footer.html param="value" variable-param=page.variable %}{% endraw %}
+{% raw %}{% include footer.html param="value" %}{% endraw %}
 {% endhighlight %}
 
 These parameters are available via Liquid in the include:
@@ -324,9 +324,9 @@ on your system and set `highlighter` to `pygments` in your site's configuration
 file.
 
 Alternatively, you can use [Rouge](https://github.com/jayferd/rouge) to highlight
-your code snippets. It doesn't support as many languages as Pygments, however it
-should suit most use cases. Also, since [Rouge](https://github.com/jayferd/rouge)
-is written in pure Ruby, you don't need Python on your system!
+your code snippets. It doesn't support as many languages as Pygments does but
+it should fit in most cases and it's written in pure Ruby ; you don't need Python
+on your system!
 
 To render a code block with syntax highlighting, surround your code as follows:
 
@@ -405,8 +405,7 @@ You can also use this tag to create a link to a post in Markdown as follows:
 
 ### Gist
 
-Use the `gist` tag to easily embed a GitHub Gist onto your site. This works
-with public or secret gists:
+Use the `gist` tag to easily embed a GitHub Gist onto your site. This works with public or secret gists:
 
 {% highlight text %}
 {% raw %}
