@@ -1,0 +1,65 @@
+---
+layout: default
+title: WiLNA-Home
+overview: true
+---
+<head>
+ <style type="text/css">
+   .HrefColor  a {
+  color: #ddd;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s; 
+  font-size: 70%;
+  font-weight: 100;
+}
+  a:hover {
+    color: #f90; }
+  .HrefColor
+  </style>
+</head>
+
+<section class="intro">
+  <div class="grid">
+    <div class="unit whole center-on-mobiles">
+      <img src="/img/HomePage.png" width='900px' /> 
+    </div>
+  </div>
+</section>
+<section class="features">
+  <div class="grid">
+    <div class="unit one-third">
+      <h3>Results Of Research</h3>
+      <p><em>Projects</em>&nbsp&nbsp&nbsp&nbsp&nbsp<em>Publications</em></p>
+      <p><em>Awards</em>&nbsp&nbsp&nbsp&nbsp&nbsp<em>Shared Codes</em></p>
+    </div>
+    <div class="unit two-thirds">
+      <h3>Introduction Of WiLNA Labs</h3>
+      <p>A group of college students have the same interest and the pursuit under the leadership of the senior teachers to explore the ocean of knowledge. They bear some important countries fund projects and important issues. Also involved in academic research, in the field of their study, they have proposed many ideas witch have an important influence.</p>
+    </div>
+    <div class="unit one-third">
+      <h3>Contact With Us</h3>
+      <p>
+        Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.
+      </p>
+    </div>
+      <div class="unit two-thirds">
+      <h3>News</h3>
+     <a href="{{ post.url }}">
+      {{ post.title }}
+    </a>
+    </div>
+    <div class="unit whole center-on-mobiles">
+      <div class="HrefColor">
+      <h3>FriendSites</h3>
+      <a href="http://www.dlut.edu.cn/" target="_blank" >大连理工大学&nbsp</a>   	
+      <a href="http://ssdut.dlut.edu.cn/" target="_blank" >&nbsp大连理工大学软件学院&nbsp</a>   	
+      <a href="http://gs.dlut.edu.cn/" target="_blank">&nbsp大连理工大学研究生院</a>   	
+    </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+

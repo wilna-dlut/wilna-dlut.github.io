@@ -1,0 +1,25 @@
+---
+layout: default
+title: Awards
+overview: true
+---
+
+ <div class="unit four-fifths">
+   <div class="grid">
+    <div class="unit whole">
+    <article>
+      <h1>Awards</h1>
+      <p>2013 National Scholarship of Graduates: Can Ma, Bingxian Lu</p>
+      <p>2013 CSC-IBM China outstanding student scholarship: Zeyi Lu</p>
+      <p>2012 National Scholarship of Graduates: Wenlong Yue</p>
+      <p>2011 Excellent Thesis Award of Liaoning Province: Longhui Ma</p>
+      <br />
+      <br />
+      <br />
+      <br />
+    </article>
+    </div>
+   </div>
+ </div>
+
+
