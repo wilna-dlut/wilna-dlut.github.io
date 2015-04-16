@@ -1,0 +1,10 @@
+---
+layout: news_item
+title: 'Blog_TestByAlec'
+date: 2015-04-15
+author: AlecShadows
+---
+
+**It's just a test after all**
+
+Community and custom plugins extending the `Liquid::Drop` class may inadvertently disclose some system information such as directory structure or software configuration to users with access to the Liquid templating system.

@@ -1,8 +1,0 @@
-<footer role="contentinfo">
-  <div class="grid">
-    <div>
-      <p style="text-align:center;">CopyRight &copy;&nbsp;{{ site.time | date: '%Y' }} wilna-dlut.github.io, All Right Reserved</p>
-      <p style="text-align:center;">School of Software College, Dalian University of Technology, WiLNA Labs</p>
-    </div>
-  </div>
-</footer>
