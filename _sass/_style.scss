@@ -85,7 +85,7 @@ nav {
   margin-top: 52px;
 
   li {
-    margin-right: 10px;
+    margin-right: 20px;
 
     a {
       @include border-radius(5px);
@@ -1085,6 +1085,42 @@ code.output {
 .HrefColor .LinksMargin .HomePageLinks{
       padding:3px;
 }
+
+#flashBoxu_u2_{
+    width:1060px;
+    height:352px;
+    border:0px solid #EEE;
+    position:relative;
+    
+    margin-left: auto;
+    margin-right: auto;}
+#flashBoxu_u2_ img{
+    /*初始不要显示*/
+    display:none;
+    /*用边框来实现空位，因为margin和paading有时会引起些麻烦*/
+    border:0px solid #FFF;}
+#flashBoxu_u2_ ul{
+    position:absolute;
+    right:7px;
+    bottom:3px;
+    font:9px tahoma;}
+#flashBoxu_u2_ ul li{
+    display:block;
+    float:left;
+    width:18px;
+    height:18px;
+  /*  line-height:12px; */
+    margin-right:4px;
+    border:0px solid #999;
+    background:#333;
+    text-align:center;
+    cursor:pointer;}
+#flashBoxu_u2_ ul li.hover{
+    border-color:#999; 
+    background:#ddd;
+    color:black;
+}
+
 
 
 
